@@ -50,6 +50,8 @@ createApp({
     },
 
     methods: {
-        
+        deleteTodo(toDoIndex){
+            this.todolist.splice(toDoIndex, 1);
+        }
     }
 }).mount("#app");
