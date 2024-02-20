@@ -62,5 +62,14 @@ createApp({
             this.todolist.push({ text: this.newTodo, done: false});
             this.newTodo = "";
         },
+
+// Funzione che cambia il valore di .done al click
+        invertTodo(currentTodo){
+            if(currentTodo.done == false){
+                currentTodo.done = true;
+            } else{
+                currentTodo.done = false;
+            }
+        }
     }
 }).mount("#app");

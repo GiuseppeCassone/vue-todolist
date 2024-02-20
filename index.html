@@ -18,7 +18,7 @@
             <h1 class="text-center">VUE TODOLIST</h1>
 
             <ul class="list-group">
-                <li v-for="(currentTodo, index) in todolist" class="list-group-item d-flex justify-content-between">
+                <li v-for="(currentTodo, index) in todolist" @click="invertTodo(currentTodo)" class="list-group-item d-flex justify-content-between">
                     <span :class="currentTodo.done == true ? `text-decoration-line-through` : ``">{{ currentTodo.text }}</span>
                     <i @click="deleteTodo(index)" class="fa-solid fa-square-xmark text-danger fs-4"></i>
                 </li>
