@@ -19,7 +19,7 @@
 
             <ul class="list-group">
                 <li v-for="(currentTodo, index) in todolist" class="list-group-item d-flex justify-content-between">
-                    <span>{{ currentTodo.text }}</span>
+                    <span :class="currentTodo.done == true ? `text-decoration-line-through` : ``">{{ currentTodo.text }}</span>
                     <i class="fa-solid fa-square-xmark text-danger fs-4"></i>
                 </li>
                 

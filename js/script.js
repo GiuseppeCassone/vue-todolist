@@ -29,7 +29,7 @@ createApp({
                 },
                 {
                     text: "Passare in farmacia",
-                    done: false,
+                    done: true,
                 },
                 {
                     text: "Pagare le bollette",
@@ -37,7 +37,7 @@ createApp({
                 },
                 {
                     text: "Completare l'esercizio di Boolean",
-                    done: false,
+                    done: true,
                 },
                 {
                     text: "Andare a giocare a D&D",
@@ -47,5 +47,9 @@ createApp({
             ],
             
         }
+    },
+
+    methods: {
+        
     }
 }).mount("#app");
