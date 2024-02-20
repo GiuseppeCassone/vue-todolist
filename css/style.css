@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* RESET */
+
+.list-group, .input-group{
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.fa-solid, li{
+    cursor: pointer;
+}
