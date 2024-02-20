@@ -13,6 +13,19 @@
 
     <div id="app">
 
+        <div class="container my-5">
+
+            <h1 class="text-center">VUE TODOLIST</h1>
+
+            <ul class="list-group">
+                <li v-for="(currentTodo, index) in todolist" class="list-group-item d-flex justify-content-between">
+                    <span>{{ currentTodo.text }}</span>
+                    <i class="fa-solid fa-square-xmark text-danger fs-4"></i>
+                </li>
+                
+            </ul>
+
+        </div>
         
 
     </div>
