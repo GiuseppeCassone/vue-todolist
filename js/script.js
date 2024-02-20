@@ -27,6 +27,22 @@ createApp({
                     text: "Andare a fare la spesa",
                     done: false,
                 },
+                {
+                    text: "Passare in farmacia",
+                    done: false,
+                },
+                {
+                    text: "Pagare le bollette",
+                    done: false,
+                },
+                {
+                    text: "Completare l'esercizio di Boolean",
+                    done: false,
+                },
+                {
+                    text: "Andare a giocare a D&D",
+                    done: false,
+                },
                 
             ],
             
