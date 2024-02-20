@@ -22,6 +22,8 @@ createApp({
     data() {
         return {
             
+            newTodo: "",
+
             todolist: [
                 {
                     text: "Andare a fare la spesa",
@@ -50,8 +52,15 @@ createApp({
     },
 
     methods: {
+// Funzione che permette di eliminare un elemento della lista al click della "X"
         deleteTodo(toDoIndex){
             this.todolist.splice(toDoIndex, 1);
-        }
+        },
+
+// Funzione che permette di aggiungere un compito al click del bottone aggiungi
+        addTodo(){
+            this.todolist.push({ text: this.newTodo, done: false});
+            this.newTodo = "";
+        },
     }
 }).mount("#app");
